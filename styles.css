@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* STRUCTURE */
+body{
+    background-color: #EEF0FF;
+    position: relative;
+    font-family: sans-serif;
+    padding-bottom: 100px;
+}
+header{
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    padding: 30px;
+    background-color: cadetblue;
+    box-shadow: 1px 3px 5px silver;
+    z-index: 100;
+}
+main{
+    padding-top: 60px;
+    background: url('clapperboard.png') no-repeat top 220px left 20px;
+}
+footer{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-color: cadetblue;
+}
+footer p{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 5px;
+    color: lightcyan;
+    font-family: 'Lobster', cursive;
+}
+/* TITRES */
+h1{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: lightcyan;
+    text-shadow: 1px 2px 3px black;
+    font-size: 32px;
+}
+h2{
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0;
+}
+/* RECOMMANDATION */
+
+.movies{
+    padding: 40px 20px;
+}
+form{
+    padding: 5px;
+    margin: 0 auto;
+}
+fieldset{
+    margin-top: 15px;
+    padding: 5px;
+    border: 1px solid cadetblue;
+}
+legend{
+    padding: 0 10px 0 10px;
+    color: cadetblue;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Lobster', cursive;
+}
+input{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #EEF0FF;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid cadetblue;
+    color: cadetblue;
+    margin-top: 15px;
+}
+input:focus-visible {
+    outline: none;
+}
+button{
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    background-color: cadetblue;
+    color: lightcyan;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    margin-top: 20px;
+}
+button:hover{
+    cursor: pointer;
+}
+#reco h2{
+    color: cadetblue;
+    font-weight: 400;
+}
+.err{
+    width: 40%;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    color: cadetblue;
+    font-size: 20px;
+}
+.infosStyle{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: aqua;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.moviesContainer{
+    margin-top: 20px;
+}
+.syno, .moviesContainer p{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: cadetblue;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 600;
+    font-family: system-ui, cursive;
+}
+article{
+    width: 300px;
+    height: 445px;
+    margin: 0 auto;
+    position: relative;
+}
+.movie{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    background-color: darkseagreen;
+    color: darkslategray;
+    width: 100%;
+}
+li{
+    list-style-type: none;
+}
+
+@media screen and (min-width: 501px){
+    form{
+        width: 50%;
+    }
+    footer p{
+        line-height: 60px;
+        padding-top: 0;
+    }
+    footer p br{
+        display: none;
+    }
+}
